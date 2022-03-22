@@ -6,7 +6,7 @@ const SearchScreen = () => {
   const [term, setTerm] = useState("");
 
   return (
-    <View>
+    <View style={styles.backgroundStyle}>
       <SearchBar
         term={term}
         onTermChange={(newTerm) => setTerm(newTerm)}
@@ -17,6 +17,12 @@ const SearchScreen = () => {
   );
 };
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  backgroundStyle: {
+    backgroundColor: "#FFFFFF",
+    height: "100%",
+    width: "100%",
+  },
+});
 
 export default SearchScreen;
