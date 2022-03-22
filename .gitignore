@@ -13,3 +13,4 @@ notes.md
 
 # macOS
 .DS_Store
+src/api/yelp.js
